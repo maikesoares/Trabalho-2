@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    
+    <script type="text/javascript" src= "script.js"></script>
+   <style>
+   #formulario{
+     
+    margin-left:5%;
+    margin-top:10%;
+    width:100px;
+    position: relative;
+   }
+    
+   table tr td{
+     
+     width: 150px;
+     
+   }
+   
+   body {
+     
+background-color:#F8F8FF;
+   }
+     
+   </style>
+   
+  <body>
+   <h1>Preencha os campos abaixo :</h1>
+  <script src="script.js"></script>
+  <div id="formulario">
+  <form>
+  <label>Nome</label>
+  <input type="text" name="txtNome"/><br><br>
+  <label>Email</label>
+  <input type="text" name="txtEmail"/><br><br>
+  <label>Telefone</label>
+  <input type="text" name="txtTelefone" /><br><br>
+  <input type="button" value="Gravar" onclick="gravaPessoa(txtNome.value, txtEmail.value, txtTelefone.value)"/><p>
+  <input type="button" value="Excluir" onclick="excluiDados()"/>
+  </form><br>
+  </div>
+
+<div id="dtPessoas">
+<table border =1px id="tbPessoas" >
+  <thead>
+    
+    <tr>
+      
+      <td><b>ID</b></td>
+      <td><b>Nome</b></td>
+      <td><b>Email</b></td>
+      <td><b>Telefone</b></td>
+      
+    </tr>
+    
+  <thead>
+
+</table>
+</div>
+  </body>
+</html>
